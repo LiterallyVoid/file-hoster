@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang=en>
+	<head>
+		<meta charset=utf-8>
+		<title>Files</title>
+		<link rel=stylesheet href=style.css>
+		<link rel=icon type=image/svg+xml href="/favicon.svg">
+		<link rel=apple-touch-icon href="/favicon-180.png">
+		<meta name=viewport content="width=device-width,initial-scale=1">
+	</head>
+	<body>
+		<script type=module src=main.js></script>
+		<header>
+			File Upload Service
+		</header>
+		<form action=/new method=post enctype=multipart/form-data>
+			<label class=password for=password>User Identification:</label>
+			<input class=password id=password name=password type=password placeholder="$1$vySqWkwe$M9rfvh.xqeKidVbzqMJXC/">
+
+			<label class=private><input class=private id=private-selfdestruct type=checkbox name=private-selfdestruct> Self-destruct</label>
+
+			<label class=files-button for=files id=file-drop-target>
+			<p>Select Files</p>
+			<p class=dim>or Drop Here</p>
+			</label>
+			<input class=files type=file id=files multiple name=files>
+
+			<input type=submit value="Enter Cyberspace">
+		</form>
+	</body>
+</html>

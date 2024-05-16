@@ -1,0 +1,163 @@
+* {
+	font-family: sans-serif;
+	font-variant-numeric: tabular-nums;
+
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	max-width: 30rem;
+	margin: auto;
+}
+
+header {
+	border-bottom: 5px solid #D03;
+
+	padding: 0 0.5rem;
+
+	font-weight: bold;
+}
+
+.dim {
+	color: #444;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+
+	align-items: left;
+}
+
+form > * {
+	margin: 0 0.5rem;
+}
+
+form > label {
+	margin-top: 1rem;
+}
+
+input.password {
+	font-size: 100%;
+
+	background-color: #FFF;
+	border: 1px solid #AAA;
+	padding: 4px;
+
+	text-align: center;
+
+	border-radius: 0.5rem;
+}
+
+input.private {
+	margin: 0;
+}
+
+label.files-button {
+	font-size: 100%;
+	line-height: 3;
+
+	background: repeating-linear-gradient(135deg, #F8F8F8 0 20px, transparent 20px 40px);
+	border-radius: 0.5rem;
+
+	cursor: pointer;
+
+	padding: 8px 20px;
+	margin: 0 0.5rem;
+	margin-top: 1em;
+
+	align-self: stretch;
+	height: 20em;
+
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	justify-content: center;
+
+}
+
+input.files {
+	/* The label is visible as the click target. */
+	display: none;
+}
+
+input[type="submit"] {
+	display: block;
+	font-size: inherit;
+
+	border-radius: 0;
+
+	background-color: #D03;
+	color: #FFF;
+
+	border: none;
+
+	padding: 8px 20px;
+	margin: auto;
+
+	margin-top: 1em;
+	margin-bottom: 2em;
+
+	cursor: pointer;
+
+	font-weight: bold;
+	font-style: italic;
+}
+
+.upload {
+	padding: 0;
+	margin: 0.5rem;
+
+	border-radius: 0.5rem;
+
+	background: linear-gradient(170deg, #EEE, #CCC);
+
+	overflow: hidden;
+}
+
+.upload__flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.upload__title {
+	flex: 1;
+	padding: 0.5rem;
+
+	overflow-wrap: break-word;
+}
+
+.upload__info {
+	margin: 0.5rem;
+}
+
+.upload__bar {
+	margin: 0;
+	padding: 0;
+	background-color: #D03;
+
+	height: 2em;
+}
+
+.upload--failed .upload__title {
+	color: #E00;
+}
+
+.upload--failed .upload__bar,
+.upload--success .upload-bar {
+	display: none;
+}
+
+.upload__url {
+	display: none;
+
+	font-family: "Fira Mono", monospace;
+}
+
+.upload--success .upload__url {
+	display: block;
+	padding: 0.5rem;
+}
+

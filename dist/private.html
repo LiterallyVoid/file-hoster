@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang=en>
+	<head>
+		<meta charset=utf-8>
+		<title>Private</title>
+		<link rel=stylesheet href=style.css>
+		<meta name=viewport content="width=device-width,initial-scale=1">
+	</head>
+	<body>
+		<header>
+			Authentication Required
+		</header>
+		<form action="{{ .Redirect }}" enctype=multipart/form-data method=post>
+			<label class=password for=password>User Identification:</label>
+			<input class=password id=password name=password type=password placeholder="$1$vySqWkwe$M9rfvh.xqeKidVbzqMJXC/">
+
+			<input type=submit value="Access Resource">
+		</form>
+	</body>
+</html>
